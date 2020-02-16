@@ -142,7 +142,7 @@
                 <h2>Please Go and Check </h2>
                 
                 <div class="second-title animated infinite pulse delay-2s zawgyi">
-                    "luckydraw.medicarehb.com"
+                    "luckydraw.medicarehb.com/winners"
                 </div>
             </div>
         </div>
