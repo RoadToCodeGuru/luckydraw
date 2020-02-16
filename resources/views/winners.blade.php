@@ -23,9 +23,9 @@
             <div class="container" style="margin-top: 50px">
                 <h3>Position Shortcuts</h3>
                 <br>
-                <h5>[ Dir = Director ] || [ Con = Controller ] || [ SV = Supervisors of every department] || [ IA = Internal Auditor ] || [ AS = Assitants of all department ] <br><br>
-                    [ HD = Heads of all department ] || [ MNG = Managers of all department ] || [ IE = IT Engineer ] || [ TRN = Trainers/Trainees ] || [ ANA = Analyst ]  <br><br>
-                    [ IC = Store Incharge ] || [ PHA = Pharminsist ] || [ GD = Graphic Designer ] || [ INT = Intern ] || [ ACT = Accountant ] </h5>
+                <h5> Dir = Director || Con = Controller || SV = Supervisors of every department || IA = Internal Auditor || AS = Assitants of all department <br><br>
+                     HD = Heads of all department || MNG = Managers of all department || IE = IT Engineer || TRN = Trainers/Trainees || ANA = Analyst <br><br>
+                     IC = Store Incharge || PHA = Pharminsist || GD = Graphic Designer || INT = Intern || ACT = Accountant </h5>
                     <br><br><hr>    
                 <h3>Winners list</h3>
                 <table class="table table-bordered" id="winners">
