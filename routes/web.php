@@ -13,6 +13,11 @@ Route::get('test', function(){
 });
 
 Route::get('/', function () {
+    if(json_decode(Staff::whereAlreadyWinner(false)->inRandomOrder()->get(), true) == [])
+    {
+        return redirect('/done');
+    }
+
     if (!session()->has('lucky_draw_number')) {
         // session(['lucky_draw_number' => 18]);
         session(['lucky_draw_number' => 20]);
