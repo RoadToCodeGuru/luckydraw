@@ -85,7 +85,7 @@ Route::get('winner-is', function(){
 
         return view('winner', compact('winner', 'lucky_draw_item'));
     } catch (ModelNotFoundException $e) {
-        return $redirect('/done');
+        return redirect('/done');
     }
 })->middleware('auth', 'completed');
 
