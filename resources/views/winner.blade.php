@@ -60,7 +60,7 @@
             }
 
             .title {
-                font-size: 62px;
+                font-size: 52px;
                 /* font-size: 9em; */
             }
             .img_title {
