@@ -60,8 +60,11 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 62px;
                 /* font-size: 9em; */
+            }
+            .img_title {
+                font-size: 82px !important;
             }
 
             .second-title {
@@ -143,6 +146,18 @@
                 background-repeat:no-repeat; */
             }
 
+            .circletag2 img{
+                /* display: block; */
+                width: 50%;
+                /* height: 500px; */
+                /* background: #E6E7ED; */
+                -moz-border-radius: 20px;
+                -webkit-border-radius: 20px;
+                /* background-image: url(no.png); */
+                /* background-position:50% 50%;
+                background-repeat:no-repeat; */
+            }
+
             /* .circletag img{
                 margin-top:7px;
             } */
@@ -176,16 +191,18 @@
                 <!-- Lucky draw -->
                 <div class="content" id="lucky_draw" style="display: block; z-index: 1">
                     <h2>Lucky Draw #{{ session('lucky_draw_number') }}</h2>
+                    @if($lucky_draw_item->picture)
                     <div class="title animated infinite pulse zawgyi">
-                        @if($lucky_draw_item->picture)
                         {{ $lucky_draw_item->name }}
-                        <div class="circletag" style="margin-bottom: 10px">
-                            <img src="/img/{{ $lucky_draw_item->picture }}">
-                        </div>
-                        @else
-                            {{ $lucky_draw_item->name }}
-                        @endif
                     </div>
+                    <div class="circletag2">
+                            <img src="/img/{{ $lucky_draw_item->picture }}">
+                    </div>
+                    @else
+                    <div class="title animated infinite pulse zawgyi">
+                        {{ $lucky_draw_item->name }}
+                    </div>
+                    @endif
 
                     @if(session('lucky_draw_number') > 0)
                         <div class="container">
@@ -199,6 +216,9 @@
                 <!-- Winner -->
                 <div class="content" style="display: block; z-index: 1" id="winner">
                     <h1 class="zawgyi" style="font-size: 45px;">*** {{ $lucky_draw_item->name }} ***</h1>
+                    <div class="circletag" style="margin-bottom: 10px">
+                            <img src="/img/{{ $lucky_draw_item->picture }}">
+                    </div>
                     <div class="second-title d-flex">
                     
                     <?php
@@ -212,7 +232,7 @@
                             }
                     ?>
                     
-                    <span class="animated delay-anime fadeIn delay-5s">( {{ $winner->position }} )</span> 
+                    <p class="animated delay-anime fadeIn delay-5s">( {{ $winner->position }} )</p> 
                     </div>
                     
                     @if(session('lucky_draw_number') > 1)

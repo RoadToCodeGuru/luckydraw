@@ -321,9 +321,18 @@ class StaffTableSeeder extends Seeder
             ['THU NANDAR ZIN','AS'],
             ['HTET HTET KHINE','AS'],
             ['KHINE MON MON THAN','TRN'],
-            ['Need One', 'ND'],
-            ['Need Two', 'ND'],
-            ['Need Three', 'ND']
+            ['THAE SU MON','AS'],
+            ['SANDAR MOE','AS'],
+            ['EI THAZIN','AS'],
+            ['SANDAR AUNG','AS'],
+            ['MAY THET CHAL','AS'],
+            ['KYI KYI MAR','AS'],
+            ['YUNE THIRI KYAW','AS'],
+            ['SAI DUU','AS'],
+            ['MYAT NOE KHINE','TRN'],
+            ['New Staff','ND'],
+            ['New Staff','ND'],
+            ['New Staff','ND']
         ];
 
         foreach($service_staffs as $staff){
