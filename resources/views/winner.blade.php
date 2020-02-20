@@ -68,7 +68,7 @@
             }
 
             .second-title {
-                font-size: 70px;
+                font-size: 60px;
                 /* font-size: 9em; */
             }
 
